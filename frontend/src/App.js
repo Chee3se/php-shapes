@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Object from "./Object";
+import Object from "./Shape";
 import styles from './App.module.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       setObjects(data)
     }
     getData()
-  })
+  }, [])
   return (
     <div className={styles.app}>
       {objects.map((object, index) => (

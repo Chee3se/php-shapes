@@ -1,6 +1,6 @@
-import styles from './Object.module.css';
+import styles from './Shape.module.css';
 
-function Object(props) {
+function Shape(props) {
     const object = props.object;
     return (
         <div className={styles.object} style={
@@ -15,4 +15,4 @@ function Object(props) {
     );
 };
 
-export default Object;
+export default Shape;
